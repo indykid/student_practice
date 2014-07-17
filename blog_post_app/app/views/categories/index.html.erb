@@ -4,13 +4,7 @@
 <ul>
   <% @categories.each do |c| %>
     <li><%= c.name %></li>
-    <!-- <td><%# link_to 'Show', c %></td>
-    <td><%# link_to 'Edit', edit_category_path(c) %></td>
-    <td><%# link_to 'Delete', c, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
   <% end %>
 </ul>
 
-<aside>
-  <%= render 'shared/ad_banner'%>
-</aside>
 
