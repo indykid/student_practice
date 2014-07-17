@@ -1,0 +1,36 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @post.author %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @post.category.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_blog_post_path(@post) %> |
+<%= link_to 'Back', blog_posts_path %>
+
+<br>
+<br>
+
+
+
+<aside>
+  <%= render 'shared/ad_banner'%>
+</aside>
